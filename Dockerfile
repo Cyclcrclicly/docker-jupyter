@@ -23,5 +23,5 @@ RUN pip install \
     jupyterlab
 
 # start jupyter lab
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser", "--disable_check_xsrf=True", "--NotebookApp.allow_origin="*""]
+CMD jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --disable_check_xsrf=True --NotebookApp.allow_origin=\"*\"
 EXPOSE 8888
